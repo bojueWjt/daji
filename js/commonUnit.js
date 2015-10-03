@@ -163,7 +163,6 @@ Ninico.Event.slideLeft = function(fn){
 
 	this.addEventListener('touchend',function(ev){
 
-		console.log("ninico")
 
 		if(this.touchEventInfo.endX === null){
 			return;
@@ -173,7 +172,7 @@ Ninico.Event.slideLeft = function(fn){
 
 			this.touchEventInfo.endX = null;
 			this.touchEventInfo.startX = null;
-			fn();
+			fn(this);
 		}
 
 	});
@@ -186,7 +185,6 @@ Ninico.Event.slideLeft = function(fn){
  */
 Ninico.Event.slideRight = function(fn){
 
-	console.log(this.touchEventInfo.endX - this.touchEventInfo.startX);
 	Ninico.Event.slideInit.call(this);
 
 	this.addEventListener('touchend',function(ev){
@@ -195,12 +193,12 @@ Ninico.Event.slideRight = function(fn){
 			return;
 		}
 
-		console.log(this.touchEventInfo.endX - this.touchEventInfo.startX);
 
 		if(this.touchEventInfo.endX - this.touchEventInfo.startX < -50){
 
+			this.touchEventInfo.endX = null;
 			this.touchEventInfo.startX = null;
-			fn();
+			fn(this);
 		}
 	});
 }
