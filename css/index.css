@@ -1,5 +1,7 @@
 .container {
 	background: #f2f2f2;
+	font-family: "Microsoft YaHei";
+
 }
 
 .container header {
@@ -48,7 +50,14 @@
 	height: 32px;
 }
 
+#main {
+	width: 100%;
+	max-width: 540px;
+	margin: 0 auto;
+}
+
 #wrap { 
+	position: relative;
 	width: 100%;
 	overflow: hidden;
 }
@@ -60,6 +69,8 @@
 #wrap ul li {
 	float: left;
 	width: 20%;
+	text-align: center;
+	
 }
 
 #wrap ul li img {
@@ -91,4 +102,35 @@
 
 #wrap ol li.focus {
 	background: rgba(0,0,0,0.8);
+}
+
+.main_nav {
+	width: 100%;
+	max-width: 540px;
+	margin: 0 auto;
+}
+
+.main_nav ul li {
+	float: left;
+	padding: 10px 0;
+	text-align: center;
+	font-size: 0.8em;
+	color: #666;
+	width: 25%;
+	font-weight: bold;
+	background: #fff;
+
+}
+
+.main_nav ul li img {
+	height: 50px;
+	width: 50px;
+	border-radius: 25px;
+}
+
+.main_nav ul::after {
+	content: " ";
+	clear: both;
+	height: 0px;
+	display: block;
 }
