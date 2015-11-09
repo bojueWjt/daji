@@ -1,0 +1,277 @@
+/*图标字体*/
+@font-face {
+  font-family: 'fontello';
+  src: url('../font/fontello.eot');
+  src: url('../font/fontello.eot#iefix') format('embedded-opentype'),
+       url('../font/fontello.woff') format('woff'),
+       url('../font/fontello.ttf') format('truetype'),
+       url('../font/fontello.svg#fontello') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+.ficon,[class^="ficon-"],[class^="ficon-"]:before,[class*=" ficon-"]:before {
+  font-family: "fontello";
+  font-style: normal;
+  font-weight: normal;
+  speak: none;
+  display: inline-block;
+  text-decoration: inherit;
+  width: 1em;
+  margin-right: .2em;
+  text-align: center;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1em;
+  margin-left: .2em;
+}
+ 
+.container {
+  overflow: hidden;
+}
+
+.container header {
+  background: #48A0DC;
+  position: fixed;
+  overflow: hidden;
+  border-bottom: 1px solid #D5D5D5;
+  text-align: center;
+  width: 100%;
+}
+
+.container header .drawer {
+  color: #fff;
+  font-weight: bolder;
+  line-height: 2.5em;
+}
+
+.container header .drawer .title {
+    font-size: 1em;
+}
+
+.container header .drawer i {
+  font-size: 1.1em;
+  line-height: 2.5em;
+  position: absolute;
+}
+
+.container header .drawer i.icon-align-justify {
+  left: 0px;
+}
+
+.container header .drawer i.icon-search {
+  right: 0;
+}
+
+.snap-drawer.show {
+  -webkit-animation: pulling 0.3s linear 1 forwards;
+}
+
+.snap-drawer.close {
+  -webkit-animation: closing 0.3s linear 1 forwards;
+}
+
+.snap-drawer {
+  background: #26292B;
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  width: 75%;
+  color: #fff;
+  margin-left: -75%;
+  z-index: 100;
+  
+}
+
+.snap-drawer .sidebar-header {
+  /*height: 100px;*/
+  padding-bottom: 20px;
+  border-bottom: 1px solid #2D3033;
+}
+
+.snap-drawer .sidebar-header .sidebar-logo {
+  display: block;
+  line-height: 50px;
+  padding-top: 10%;
+  padding-left: 6%;
+
+
+}
+
+.snap-drawer .sidebar-header .sidebar-logo .userLogo {
+  background: url(../img/user.png) center center;
+  display: inline-block;
+  height: 50px;
+  width: 50px;
+  float: left;
+  margin-right: 10px;
+  border-radius: 25px;
+}
+
+.snap-drawer .sidebar-header  i.icon-cancel {
+  position: absolute;
+  right: 5px;
+  top: 5px;
+}
+
+.snap-drawer .ficon {
+  color: rgb(90,97,102);
+}
+
+.snap-drawer .sidebar-breadcrumb {
+  margin-left: 5%;
+  padding: 20px 0;
+}
+
+.snap-drawer .sidebar-menu li a.active-item {
+  background: rgb(72,160,220);
+}
+
+.snap-drawer .sidebar-menu li a {
+  display: block;
+  padding-left: 5%;
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+
+.snap-drawer .sidebar-menu li a i {
+  font-size: 1.2em;
+  margin-right: 10%;
+  color: #FFF;
+}
+
+.snap-drawer .sidebar-menu li a::after {
+  content: ' ';
+  display: block;
+  height: 0;
+  clear: both;
+}
+
+
+.snap-drawer .sidebar-menu li a i.cicle {
+  height: 10px;
+  width: 10px;
+  background: rgb(69,72,77);
+  display: block;
+  border-radius: 5px;
+  float: right;
+  margin-top: 5px;
+  
+}
+
+.snap-drawer  div.footer {
+  position: absolute;
+  bottom: 0px;
+  
+}
+
+.service-main-info {
+  margin-top: -65px;
+}
+
+.service-info {
+  position: relative;
+  margin-top: 15px;
+  padding: 29px 0;
+  background: #FFF;
+}
+
+.service-info .rightInfo {
+  position: absolute;
+  margin-top: -93px;
+  margin-left: 49%;
+  width: 49%;
+  text-align: right;
+  
+}
+
+.service-info .service-mainImg img {
+  width: 100%;
+}
+
+.service-info .price {
+  display: block;
+  background: #26292B;
+  width: 69px;
+  position: relative;
+  color: #FFF;
+  padding: 3px;
+  margin: 20px 0;
+}
+
+.service-info .moveInfo {
+  margin-left: 20px;
+}
+
+.service-info .moveInfo h3 {
+  font-size: 0.8em;
+  font-weight: 600;
+  margin-bottom: 3px;
+}
+
+.service-info .moveInfo .location {
+  font-size: 0.5em;
+  color: #666;
+  padding: 0px;
+}
+
+.service-info .moveInfo .username {
+  font-size: 0.5em;
+  color: 0.5em;
+}
+
+.service-info .userLogo {
+  background: url(../img/user02.jpg) center center;
+  display: block;
+  height: 50px;
+  width: 50px;
+  float: right;
+  border-radius: 25px;
+}
+
+
+.service-info .rightInfo .grade::before {
+  content: ' ';
+  display: block;
+  height: 0;
+  clear: both;
+}
+
+.service-info .rightInfo .grade i {
+
+  font-size: 12px;
+  color: #FFB800;
+}
+
+.service-info .rightInfo .grade {
+  margin-bottom: 16px;
+}
+
+.service-info .rightInfo .icon-heart {
+  margin-right: 3px;
+  padding: 10px 8px 8px 8px;
+  border-radius: 25px;
+  background: #7D98DB;
+  color: #fff;
+}
+
+
+@-webkit-keyframes 'pulling'{
+  0%{
+    margin-left: -75%;
+  }
+  100%{
+    margin-left: 0%; 
+  }
+}
+
+@-webkit-keyframes 'closing'{
+  0%{
+    margin-left: 0%;
+  }
+  100%{
+    margin-left: -75%; 
+  }
+}
+
